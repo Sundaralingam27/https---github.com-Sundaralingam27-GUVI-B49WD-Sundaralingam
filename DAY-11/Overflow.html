@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <style>
+      .class-1 {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        background: linear-gradient(green, yellowgreen);
+        margin-bottom: 10px;
+      }
+      hidden {
+        width: inherit
+        height: inherit
+        border: 1px solid black;
+        background:inherit
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      .auto {
+        overflow: auto;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Overflow Demo</h1>
+    <div class="class-1">
+      <div class="hidden">
+        the item(content) hide completely when overflow happens
+      </div>
+      <div class="scroll">
+        There is always a provision (space for scroll bar) when the content
+        overflow the scroll bar will shown
+      </div>
+      <div class="auto">
+        It is intially didn't have a scroll bar, but when the content was
+        overflow then scroll bar will shown
+      </div>
+      <div class="visible">
+        the item(content) was overflow it show all the content visibly
+      </div>
+    </div>
+  </body>
+</html>

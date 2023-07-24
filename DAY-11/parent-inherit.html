@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Inherit</title>
+    <style>
+      .parent {
+        font-size: 22px;
+        background-color: blue;
+      }
+      p {
+        color: black;
+      }
+      .child {
+        color: crimson;
+      }
+      .child p {
+        color: inherit;
+        font-size: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Parent Inherit :</h1>
+    <div class="parent">
+      <div class="child">
+        Item 1
+        <p>welcome all</p>
+      </div>
+    </div>
+  </body>
+</html>
