@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Dom</title>
+  </head>
+  <body>
+    <div id="mainid">hello</div>
+    <div id="mainid2"></div>
+    <script>
+      const ele = document.createElement("div");
+      ele.setAttribute("id", "mainid");
+      ele.innerText = "my name is Vijay";
+
+      //const parentele = document.getElementById("mainid");
+      // parentele.appendChild(ele);
+      const ach = document.createElement("a");
+      ach.setAttribute("target", "_blank");
+      ach.setAttribute("href", "");
+      ach.innerText = " Click me";
+
+      const b = document.getElementById("mainid");
+      b.append(document.createElement("br"), ach, ele);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="para">item 1</p>
+    <p class="para">item 2</p>
+    <p class="para">item 3</p>
+    <p class="para">item 4</p>
+    <p class="para">item 5</p>
+
+    <script>
+      /* overwrite on existing div content
+      const a = document.getElementById("mydiv");
+      a.innerText = "sundaralingam"; */
+
+      /* using body as a append
+      const a = document.createElement("div");
+      a.innerText = "hello";
+      document.body.append(a); */
+
+      /* queryselector
+      const paraele = document.querySelector(".para");
+      paraele.style.color = "blue"; */
+
+      const elem = document.querySelectorAll(".para");
+
+      elem.forEach((hi) => {
+        hi.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

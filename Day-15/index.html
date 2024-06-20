@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Events</title>
+  </head>
+  <body>
+    <h1>JS Events</h1>
+    <p id="para">I am going to perform Javascript Events</p>
+
+    <script>
+      const ele = document.getElementById("para");
+
+      // click event
+      ele.addEventListener("click", function () {
+        ele.innerText = "Event Click was performed";
+        ele.style.background = "blue";
+      });
+
+      // mouseover
+      ele.addEventListener("mouseover", function () {
+        ele.innerText = "mouseover was performed";
+        ele.style.background = "green";
+      });
+
+      // mouseout
+      ele.addEventListener("mouseout", function () {
+        ele.innerText = "mouseout was performed";
+        ele.style.background = "yellow";
+      });
+      // key down
+      document.addEventListener("keydown", function () {
+        console.log("you typed", event.key);
+      });
+    </script>
+  </body>
+</html>

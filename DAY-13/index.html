@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+  </head>
+  <body>
+    <h1>JS DOM</h1>
+    <a id="parent" href="https://www.youtube.com/" target="_blank"> </a>
+    <script>
+      var a = document.createElement("div");
+      a.setAttribute("id", "mainid");
+      a.innerText = "click me";
+
+      var b = document.getElementById("parent");
+      b.appendChild(a);
+    </script>
+  </body>
+</html>
