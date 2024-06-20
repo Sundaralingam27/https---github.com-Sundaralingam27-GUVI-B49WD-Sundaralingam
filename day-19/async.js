@@ -1,14 +1,7 @@
 function gravy() {
-    setTimeout (()=> {
-     new Promise((resolve, reject) => {
-
-    ((resolve,reject)=>{
-        resolve.then {
-            console.log ("gravy was ready")
-        }
-     })
-    })
-    },5000) 
+    setTimeout (()=> { 
+console.log ("gravy was ready")
+    },3000)
 }
 
 async function dinner() {
